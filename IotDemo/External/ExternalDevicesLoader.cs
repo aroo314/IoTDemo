@@ -53,7 +53,7 @@ public class ExternalDevicesLoader
 
                 var device = new Device
                 {
-                    Id = r.Id ?? string.Empty,
+                    Id = r.Id.ToString(),
                     Name = r.Device_Name ?? string.Empty,
                     Type = MapType(r.Type),
                     Location = location,

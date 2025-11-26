@@ -1,16 +1,31 @@
 [
-  {
-    "id": "m-1001",
-    "device_id": "dev-001",
-    "ts_utc": "2025-11-23T09:10:00Z",
-    "temp_c": 180.5,
-    "humidity": null
-  },
-  {
-    "id": "m-1002",
-    "device_id": "dev-002",
-    "ts_utc": "2025-11-23T09:05:00Z",
-    "temp_c": 14.2,
-    "humidity": 65.1
-  }
+  { "id": "m-2001", "device_id": "0", "ts_utc": "2025-11-23T09:10:00Z", "temp_c": 180.5, "humidity": null },
+  { "id": "m-2002", "device_id": "0", "ts_utc": "2025-11-23T09:20:00Z", "temp_c": 175.2, "humidity": null },
+
+  { "id": "m-2003", "device_id": "1", "ts_utc": "2025-11-23T09:05:00Z", "temp_c": null, "humidity": 65.1 },
+  { "id": "m-2004", "device_id": "1", "ts_utc": "2025-11-23T09:25:00Z", "temp_c": null, "humidity": 63.8 },
+
+  { "id": "m-2005", "device_id": "2", "ts_utc": "2025-11-23T10:00:00Z", "temp_c": 21.4, "humidity": null },
+  { "id": "m-2006", "device_id": "2", "ts_utc": "2025-11-23T10:15:00Z", "temp_c": 21.7, "humidity": null },
+
+  { "id": "m-2007", "device_id": "3", "ts_utc": "2025-11-23T10:05:00Z", "temp_c": null, "humidity": 58.5 },
+  { "id": "m-2008", "device_id": "3", "ts_utc": "2025-11-23T10:20:00Z", "temp_c": null, "humidity": 59.1 },
+
+  { "id": "m-2009", "device_id": "4", "ts_utc": "2025-11-23T10:10:00Z", "temp_c": 12.3, "humidity": 72.0 },
+  { "id": "m-2010", "device_id": "4", "ts_utc": "2025-11-23T10:25:00Z", "temp_c": 12.6, "humidity": 71.5 },
+
+  { "id": "m-2011", "device_id": "5", "ts_utc": "2025-11-23T09:30:00Z", "temp_c": null, "humidity": null },
+  { "id": "m-2012", "device_id": "5", "ts_utc": "2025-11-23T09:45:00Z", "temp_c": null, "humidity": null },
+
+  { "id": "m-2013", "device_id": "6", "ts_utc": "2025-11-23T10:20:00Z", "temp_c": 20.1, "humidity": null },
+  { "id": "m-2014", "device_id": "6", "ts_utc": "2025-11-23T10:35:00Z", "temp_c": 19.9, "humidity": null },
+
+  { "id": "m-2015", "device_id": "7", "ts_utc": "2025-11-22T18:45:00Z", "temp_c": null, "humidity": 54.0 },
+  { "id": "m-2016", "device_id": "7", "ts_utc": "2025-11-22T19:00:00Z", "temp_c": null, "humidity": 55.2 },
+
+  { "id": "m-2017", "device_id": "8", "ts_utc": "2025-11-23T10:25:00Z", "temp_c": 23.0, "humidity": 45.0 },
+  { "id": "m-2018", "device_id": "8", "ts_utc": "2025-11-23T10:40:00Z", "temp_c": 22.8, "humidity": 44.6 },
+
+  { "id": "m-2019", "device_id": "9", "ts_utc": "2025-11-23T10:30:00Z", "temp_c": 3.8, "humidity": null },
+  { "id": "m-2020", "device_id": "9", "ts_utc": "2025-11-23T10:45:00Z", "temp_c": 3.5, "humidity": null }
 ]

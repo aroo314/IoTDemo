@@ -1,6 +1,6 @@
 [
   {
-    "id": "dev-001",
+    "id": 0,
     "device_name": "SmartToaster v2.0",
     "type": "sensor_temp",
     "loc": "kitchen",
@@ -10,7 +10,7 @@
     "last_seen_utc": "2025-11-23T09:15:00Z"
   },
   {
-    "id": "dev-002",
+    "id": 1,
     "device_name": "Basement Humidity Sensor",
     "type": "sensor_humidity",
     "loc": "basement",
@@ -18,5 +18,85 @@
     "fw_ver": "0.9.1-beta",
     "status": "offline",
     "last_seen_utc": "2025-11-20T21:00:00Z"
+  },
+  {
+    "id": 2,
+    "device_name": "Living Room Thermometer",
+    "type": "sensor_temp",
+    "loc": "living_room",
+    "battery": 76,
+    "fw_ver": "1.0.0",
+    "status": "online",
+    "last_seen_utc": "2025-11-23T10:00:00Z"
+  },
+  {
+    "id": 3,
+    "device_name": "Bathroom Humidity Sensor",
+    "type": "sensor_humidity",
+    "loc": "bathroom",
+    "battery": 58,
+    "fw_ver": "1.1.0",
+    "status": "online",
+    "last_seen_utc": "2025-11-23T10:05:00Z"
+  },
+  {
+    "id": 4,
+    "device_name": "Outdoor Weather Station",
+    "type": "sensor_multi",
+    "loc": "garden",
+    "battery": 93,
+    "fw_ver": "2.0.1",
+    "status": "online",
+    "last_seen_utc": "2025-11-23T10:10:00Z"
+  },
+  {
+    "id": 5,
+    "device_name": "Home Gateway",
+    "type": "gateway",
+    "loc": "hall",
+    "battery": 100,
+    "fw_ver": "3.2.0",
+    "status": "online",
+    "last_seen_utc": "2025-11-23T09:30:00Z"
+  },
+  {
+    "id": 6,
+    "device_name": "Bedroom Thermometer",
+    "type": "sensor_temp",
+    "loc": "bedroom",
+    "battery": 65,
+    "fw_ver": "1.0.3",
+    "status": "online",
+    "last_seen_utc": "2025-11-23T10:20:00Z"
+  },
+  {
+    "id": 7,
+    "device_name": "Garage Humidity Sensor",
+    "type": "sensor_humidity",
+    "loc": "garage",
+    "battery": 51,
+    "fw_ver": "0.9.5",
+    "status": "offline",
+    "last_seen_utc": "2025-11-22T18:45:00Z"
+  },
+  {
+    "id": 8,
+    "device_name": "Office Multi Sensor",
+    "type": "sensor_multi",
+    "loc": "office",
+    "battery": 88,
+    "fw_ver": "2.1.0",
+    "status": "online",
+    "last_seen_utc": "2025-11-23T10:25:00Z"
+  },
+  {
+    "id": 9,
+    "device_name": "Fridge Temperature Sensor",
+    "type": "sensor_temp",
+    "loc": "kitchen",
+    "battery": 72,
+    "fw_ver": "1.0.8",
+    "status": "online",
+    "last_seen_utc": "2025-11-23T10:30:00Z"
   }
 ]

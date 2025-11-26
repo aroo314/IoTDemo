@@ -14,7 +14,7 @@ namespace IotDemo.External;
 
 public class DeviceRaw
 {
-    public string Id { get; set; } = default!;
+    public int Id { get; set; }
     public string Device_Name { get; set; } = default!;
     public string Type { get; set; } = default!;
     public string? Loc { get; set; }
