@@ -15,7 +15,6 @@ public static class DevicesEndpoints
              string? location,
              int? minBattery,
              int? maxBattery,
-             string? search,
              int page = 1,
              int pageSize = 10) =>
             {
@@ -64,12 +63,6 @@ public static class DevicesEndpoints
                 if (minBattery is not null) items = items.Where(d => d.BatteryPercent >= minBattery.Value);
                 if (maxBattery is not null) items = items.Where(d => d.BatteryPercent <= maxBattery.Value);
 
-                // search by name (case-insensitive contains)
-                if (!string.IsNullOrWhiteSpace(search))
-                {
-                    var q = search.Trim().ToLowerInvariant();
-                    items = items.Where(d => (d.Name ?? string.Empty).ToLowerInvariant().Contains(q));
-                }
 
                 // pagination
                 if (page < 1) page = 1;

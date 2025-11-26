@@ -16,7 +16,6 @@ Zwraca listę urządzeń IoT z możliwością filtrowania i paginacji.
 - `location` – string, filtr po lokalizacji (case-insensitive)
 - `minBattery` – minimalny poziom baterii (int)
 - `maxBattery` – maksymalny poziom baterii (int) – dodawany w zadaniu warsztatowym
-- `search` – fragment nazwy urządzenia (case-insensitive)
 - `page` – numer strony, domyślnie `1`
 - `pageSize` – rozmiar strony, domyślnie `10`
 
