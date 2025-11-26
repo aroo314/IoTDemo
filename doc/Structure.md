@@ -72,7 +72,7 @@ Struktura jest zoptymalizowana pod:
   - `appsettings*.json` – konfiguracja,
   - pozostałe katalogi: `External/`, `Domain/`, `Infrastructure/`, `Endpoints/`, `Swagger/`.
 
-- **IotDemo.Tests/** – folder testów jednostkowych (pusty, zawiera `.gitkeep`).
+- **IotDemo.Tests/** – pusty folder techniczny (zawiera `.gitkeep`).
 
 ## Zasady dla LLM
 

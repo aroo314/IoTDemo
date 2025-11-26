@@ -1,29 +1,43 @@
+using IotDemo.Endpoints;
+using IotDemo.External;
+using IotDemo.Infrastructure;
+using IotDemo.Swagger;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+// DI
+builder.Services.AddSingleton<InMemoryDevicesRepository>();
+builder.Services.AddSingleton<InMemoryMeasurementsRepository>();
+builder.Services.AddSingleton<ExternalDevicesLoader>();
+builder.Services.AddSingleton<ExternalMeasurementsLoader>();
+builder.Services.AddSingleton<IDevicesSource, FileDevicesSource>();
+
+// Swagger
+SwaggerConfig.Add(builder.Services);
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+// Swagger
+SwaggerConfig.Use(app);
 
 app.UseHttpsRedirection();
 
+// Load data at startup
+var devicesSource = app.Services.GetRequiredService<IDevicesSource>();
+var devicesRepo = app.Services.GetRequiredService<InMemoryDevicesRepository>();
+var measurementsRepo = app.Services.GetRequiredService<InMemoryMeasurementsRepository>();
+var measurementsLoader = app.Services.GetRequiredService<ExternalMeasurementsLoader>();
 
-app.MapGet("/test", () =>
-{
-   
-})
-.WithName("IoTDemo")
-.WithOpenApi();
+var devices = devicesSource.LoadDevices();
+devicesRepo.SetDevices(devices);
+
+var measurements = measurementsLoader.LoadMeasurements();
+measurementsRepo.SetMeasurements(measurements);
+
+// Endpoints
+DevicesEndpoints.Map(app);
+MeasurementsEndpoints.Map(app);
+StatsEndpoints.Map(app);
+AdminEndpoints.Map(app);
 
 app.Run();
-
-

@@ -16,7 +16,6 @@ Projekt **IoTDemo** jest materiałem warsztatowym na sesję około 1,5 godziny d
 1. Pokazać, jak używać LLM (np. Cline, Cursor, ChatGPT) do:
    - dodawania nowych endpointów,
    - refaktoringu kodu,
-   - generowania testów jednostkowych,
    - pracy z konfiguracją i warstwami aplikacji.
 2. Zaprezentować czytelną, spójną strukturę projektu:
    - `External/` – modele Raw i loadery,
@@ -30,7 +29,6 @@ Projekt **IoTDemo** jest materiałem warsztatowym na sesję około 1,5 godziny d
 1. Uczestnik potrafi:
    - rozumieć istniejący kod,
    - poprosić LLM o dodanie nowego feature’a,
-   - wygenerować testy do istniejącego endpointu,
    - bezpiecznie refaktoryzować kod z pomocą LLM.
 2. Repozytorium służy jako **source of truth**:
    - dokumentacja w folderze `doc/`,

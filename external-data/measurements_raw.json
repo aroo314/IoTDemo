@@ -1,0 +1,16 @@
+[
+  {
+    "id": "m-1001",
+    "device_id": "dev-001",
+    "ts_utc": "2025-11-23T09:10:00Z",
+    "temp_c": 180.5,
+    "humidity": null
+  },
+  {
+    "id": "m-1002",
+    "device_id": "dev-002",
+    "ts_utc": "2025-11-23T09:05:00Z",
+    "temp_c": 14.2,
+    "humidity": 65.1
+  }
+]

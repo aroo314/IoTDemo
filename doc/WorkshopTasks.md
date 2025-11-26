@@ -2,7 +2,6 @@
 
 Ten dokument opisuje zadania, które uczestnicy mają wykonać podczas pracy z projektem **IoTDemo**, najlepiej z pomocą LLM (Cline, Cursor, ChatGPT).
 
-Uwaga: Repozytorium zawiera pusty folder testów `IotDemo.Tests/` (z plikiem `.gitkeep`). Testy jednostkowe dodawane w zadaniach należy umieszczać w tym folderze.
 
 ## Zadanie 1 – filtr maxBattery w GET /api/devices
 
@@ -14,10 +13,6 @@ Dodać dodatkowy filtr `maxBattery` w endpointzie `GET /api/devices`.
 
 1. Dodać opcjonalny parametr query `maxBattery` (int).
 2. Jeśli `maxBattery` jest podany, lista urządzeń powinna zawierać tylko te, które mają `BatteryPercent <= maxBattery`.
-3. Dodać test jednostkowy w projekcie testowym, który:
-   - przygotuje dane z urządzeniami o różnych poziomach baterii,
-   - wywoła endpoint z parametrem `maxBattery`,
-   - sprawdzi, że zwrócone zostały tylko urządzenia spełniające warunek.
 
 ---
 
@@ -37,10 +32,6 @@ Dodać nowy endpoint:
    - jeśli `Loc` w `DeviceRaw` jest puste lub `null`, ustawiać `Device.Location = "unknown"`,
    - zalogować ostrzeżenie (`ILogger`) w takiej sytuacji.
 
-### Testy
-
-- Przypadek 1: lokalizacja z urządzeniami → `200 OK` i lista urządzeń.
-- Przypadek 2: lokalizacja bez urządzeń → `404 Not Found`.
 
 ---
 
@@ -82,10 +73,6 @@ Dodać interfejs `IDevicesSource`, implementację `FileDevicesSource` oraz endpo
      - zwraca `400 Bad Request`,
      - nie zmienia danych w repozytorium.
 
-### Testy
-
-- Scenariusz 1: `AllowDeviceReload = false` → `400 Bad Request`, brak przeładowania.
-- Scenariusz 2: `AllowDeviceReload = true` → poprawne przeładowanie danych (można sprawdzić zmianę liczby urządzeń lub konkretne Id).
 
 ---
 
@@ -93,6 +80,6 @@ Dodać interfejs `IDevicesSource`, implementację `FileDevicesSource` oraz endpo
 
 Przykładowe prompt’y, które uczestnicy mogą użyć w LLM:
 
-- „Dodaj obsługę parametru maxBattery do endpointu GET /api/devices i napisz test jednostkowy, który to sprawdzi.”
+- „Dodaj obsługę parametru maxBattery do endpointu GET /api/devices.”
 - „Dodaj endpoint GET /api/locations/{location}/devices z paginacją i zachowaniem 404 dla pustej lokalizacji.”
 - „Zrefaktoryzuj ładowanie urządzeń tak, aby używać interfejsu IDevicesSource i dodaj endpoint POST /api/admin/reload-devices zgodnie z dokumentacją.”
