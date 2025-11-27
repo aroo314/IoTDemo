@@ -159,7 +159,9 @@ Jakie są jej główne funkcje oraz najważniejsze zadania, które realizuje?
                                                                      pokaż zmiany w kontrolerze / endpointzie oraz w miejscu, gdzie wykonywane jest zapytanie do bazy (np. repozytorium lub DbContext).
                                                                      Pokaż gotowy kod przed i po zmianie oraz krótki komentarz, co zostało zrobione.
 
-3.
+
+
+3. Twoim zadaniem jest dodanie walidacji dla statusu. Jeśli nie istanieje zwróć w odopowedzi blad z konumikatem
 
 
 
